@@ -189,7 +189,7 @@ def process_dependencies(arch_queue, local_override=None):
 def main(os, version, milestone, local_override):
     arch_queue = JoinableQueue()
 
-    arches = ('x86_64', 'aarch64', 'i686', 'armv7hl', 'ppc64', 'ppc64le')
+    arches = ('x86_64', 'aarch64', 'i686', 'armv7hl', 'ppc64', 'ppc64le', 's390x')
 
     processes = []
     # Create parallel processes for each architecture,  up to the limit of

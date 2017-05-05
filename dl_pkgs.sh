@@ -16,7 +16,7 @@ else
 fi
 
 
-for arch in "x86_64" "i686" "armv7hl" "aarch64" "ppc64" "ppc64le"; do
+for arch in "x86_64" "i686" "armv7hl" "aarch64" "ppc64" "ppc64le" "s390x"; do
     mkdir -p repo/$release/$arch/os repo/$release/$arch/sources
     pushd repo/$release/$arch/os/
     cat $nvrfile | xargs --max-procs=$PROCESSORS -I NVR \

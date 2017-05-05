@@ -44,7 +44,7 @@ if [ "$release" == "rawhide" ]; then
 
     # Put the resulting SRPMs into place
     # As well as the RPMS from Koji
-    for arch in "x86_64" "i686" "armv7hl" "aarch64" "ppc64" "ppc64le"; do
+    for arch in "x86_64" "i686" "armv7hl" "aarch64" "ppc64" "ppc64le" "s390x"; do
         # Copy the generated SRPMs
         mkdir -p $dest/$arch/sources
         mv output/$arch/*.src.rpm $dest/$arch/sources/
